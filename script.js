@@ -28,3 +28,12 @@ if (window.location.pathname.includes("cart.html")) {
   });
   document.getElementById("cart-total").textContent = "Total: $" + total;
 }
+// Hamburger toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+  });
+});

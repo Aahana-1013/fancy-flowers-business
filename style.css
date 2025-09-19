@@ -141,3 +141,44 @@ footer {
     background: #ffdde1;
     margin-top: 1.25rem; 
 }
+
+/* Default hide nav */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  background: #ffdde1;
+  position: absolute;
+  top: 4rem; /* below header */
+  right: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Show when active */
+#nav-menu.show {
+  display: flex;
+}
+
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Optional: on larger screens, make it horizontal when shown */
+@media (min-width: 900px) {
+  #nav-menu {
+    flex-direction: row;
+    position: static;
+    display: none; /* still hidden until hamburger is clicked */
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  #nav-menu.show {
+    display: flex;
+    gap: 1rem;
+  }
+}
