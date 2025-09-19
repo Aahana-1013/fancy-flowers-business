@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Blossom Flower Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🌸 Blossom</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" id="cart-btn">🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <section class="featured">
+    <h2>Our Collection</h2>
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://picsum.photos/200/200?random=3" alt="Tulip Bouquet">
+        <h3>Tulip Bouquet</h3>
+        <p>$60</p>
+        <button onclick="addToCart('Tulip Bouquet', 60)">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/200/200?random=4" alt="Orchid Vase">
+        <h3>Orchid Vase</h3>
+        <p>$75</p>
+        <button onclick="addToCart('Orchid Vase', 75)">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/200/200?random=5" alt="Mixed Flowers">
+        <h3>Mixed Flowers</h3>
+        <p>$50</p>
+        <button onclick="addToCart('Mixed Flowers', 50)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Blossom Flower Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
